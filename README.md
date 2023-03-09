@@ -68,6 +68,10 @@ To attach the volume to the instance
 --------------------------------------
 aws ec2 attach-volume  --volume-id value --instance-id value --device /dev/sdh
 
+To detach the volume to the instance
+-------------------------------
+aws ec2 detach-volume --volume-id value
+
  
 
 
