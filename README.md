@@ -8,9 +8,9 @@ instance id : i-0155239af7d3f1523
 
 Remove the value and add the instance id 
 
-1.Creating the ionstances:
+1.Creating the Instances:
 -----------------------------
-aws opsworks --region ap-south-1 create-instance --stack-id value --layer-ids value --hostname name_of_the_instance --instance-type Type_of_Instance --ssh-key-name Key pair name --os "Amazon Linux" 
+aws ec2 run-instances --image-id ami-09ba48996007c8b50 --count 1 --instance-type t2.micro --key-name wdde17
 
 2.Describe the Instances
 -------------------------
@@ -24,7 +24,7 @@ aws ec2 start-instances --instance-ids value
 ------------------------
 aws ec2 stop-instances --instance-ids value
 
-5.To terminate the instance 
+5.To terminate the Instances 
 ----------------------------
 aws ec2 terminate-instances --dry-run --instance-ids value
 
