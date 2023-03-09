@@ -56,6 +56,22 @@ De-register AMI
 ------------------
 aws ec2 deregister-image --image value
 
+To create the IAM Groups
+-------------------------
+aws iam create-group --group-name name_of_the_group
+
+To create the IAM Users
+-----------------------
+aws iam create-user --user-name name_of_the_user
+
+To add the users to the group
+------------------------------
+aws iam add-user-to-group --user-name name_of_the_user --group-name name_of_the_group
+
+To see the complete information of group
+-----------------------------------------
+aws iam get-group --group-name name_of_the_group
+
 Creating the volume 
 ---------------------
 aws ec2 create-volume --size Value --availability-zone Value
