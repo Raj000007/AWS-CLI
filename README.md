@@ -28,15 +28,27 @@ aws ec2 stop-instances --instance-ids value
 ----------------------------
 aws ec2 terminate-instances --dry-run --instance-ids value
 
-6.Creating the volume 
----------------------
-aws ec2 create-volume --size Value --availability-zone <Value>
+6.To reboot the Instances
+--------------------------
+aws ec2 reboot-instances --instance-ids value
 
-7.Describe the Volume
+7.To create AMI
+------------------
+aws ec2 create-image --instance-id value --name "Image_name" --description "AMI_for_development_server"
+
+8.Creating the volume 
+---------------------
+aws ec2 create-volume --size Value --availability-zone Value
+
+9.Describe the Volume
 ----------------------
 aws ec2 describe-volumes
 
-8.To attach the volume to the instance
+10.To attach the volume to the instance
 --------------------------------------
 aws ec2 attach-volume  --volume-id value --instance-id value --device /dev/sdh
+
+11. 
+
+
 
