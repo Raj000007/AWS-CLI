@@ -1,4 +1,41 @@
-# AWS CLI COMMANDS
+# AWS CLI 
+
+# Installation of AWS CLI 
+
+On Linux:
+---------
+
+1. 64-bit:
+
+   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   
+   unzip awscliv2.zip
+   
+   sudo ./aws/install
+
+2. Linux ARM
+
+   curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awscliv2.zip"
+   
+   unzip awscliv2.zip
+   
+   sudo ./aws/install
+   
+On macOS:
+---------
+
+   curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+   
+   sudo installer -pkg AWSCLIV2.pkg -target /
+   
+On Windows:
+-----------
+   
+   msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
+
+
+NOTE:
+------
 
 Value refers to the id of the resources in the aws 
 
@@ -7,6 +44,31 @@ Example:
 instance id : i-0155239af7d3f1523
 
 Remove the value and add the instance id,Volume id, AMI id etc.., 
+
+Configuring the aws cli in the local system
+---------------------------------------------
+
+Note:
+-----
+
+Before using all the commands first we need to configure the AWS by creating the IAM User with the required permission along with the access keys and secret access keys 
+
+To configure the AWS CLI 
+-------------------------
+aws configure 
+
+output:
+
+AWS Access Key ID []: Enter the access key 
+
+AWS Secret Access Key []: Enter the secret access key
+
+Default region name []: Enter the region code 
+
+Default output format [json]: Enter the Output format like Text,json,table,yml choose anyone
+
+
+
 
 To create the Key Pair
 -----------------------
